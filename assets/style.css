@@ -17,16 +17,29 @@ section {
   padding: 1em;
   width: 100%;
   background-color: white;
+  border-radius: 10px;
+  width: 300px;
+}
+
+.bottone {
+  color: red;
+  background-color: white;
+  border-style: none;
+  border-radius: 20px;
+  font-size: 15px;
 }
 
 .aggiungi {
   height: 30px;
   width: 30px;
   font-size: large;
+  border-radius: 20px;
 }
 
 input {
   height: 30px;
+  border-radius: 15px;
+  border: solid 1px;
 }
 
 .barrato {

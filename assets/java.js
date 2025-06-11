@@ -19,7 +19,7 @@ myForm.addEventListener('submit', (e) => {
 
   task.innerHTML = `
   ${addtodo}
-<button onclick="remove(event)">✕</button>
+<button onclick="remove(event)" class="bottone">✕</button>
 `;
 
   const container = document.getElementById('saveToDo');
