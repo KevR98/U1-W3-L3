@@ -1,0 +1,35 @@
+html {
+  background: #eeaeca;
+  background: radial-gradient(
+    circle,
+    rgba(238, 174, 202, 1) 0%,
+    rgba(148, 187, 233, 1) 100%
+  );
+}
+
+body {
+  width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+section {
+  padding: 1em;
+  width: 100%;
+  background-color: white;
+}
+
+.aggiungi {
+  height: 30px;
+  width: 30px;
+  font-size: large;
+}
+
+input {
+  height: 30px;
+}
+
+.barrato {
+  text-decoration: line-through;
+  color: grey;
+}
