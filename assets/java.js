@@ -7,8 +7,6 @@ myForm.addEventListener('submit', (e) => {
 
   const addtodo = toDoInput.value;
 
-  console.log('INFO RACCOLTE', addtodo);
-
   // CREO UNA LISTA VUOTA
 
   const task = document.createElement('li');
@@ -19,8 +17,8 @@ myForm.addEventListener('submit', (e) => {
 
   task.innerHTML = `
   ${addtodo}
-<button onclick="remove(event)" class="bottone">✕</button>
-`;
+  <button onclick="remove(event)" class="bottoneRemove">✕</button>
+  `;
 
   const container = document.getElementById('saveToDo');
   container.appendChild(task);
@@ -28,8 +26,6 @@ myForm.addEventListener('submit', (e) => {
   document.getElementById('barra').addEventListener('click', (e) => {
     e.target.classList.toggle('barrato');
   });
-
-  myForm.reset();
 });
 
 // ELLIMINO LE LISTE CHE VOGLIO

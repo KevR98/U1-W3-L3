@@ -7,6 +7,10 @@ html {
   );
 }
 
+header {
+  margin-top: 100px;
+}
+
 body {
   width: 500px;
   margin-left: auto;
@@ -18,14 +22,16 @@ section {
   width: 100%;
   background-color: white;
   border-radius: 10px;
-  width: 300px;
 }
 
-.bottone {
+#toDo {
+  width: 85%;
+}
+
+.bottoneRemove {
   color: red;
   background-color: white;
   border-style: none;
-  border-radius: 20px;
   font-size: 15px;
 }
 
@@ -45,4 +51,13 @@ input {
 .barrato {
   text-decoration: line-through;
   color: grey;
+  cursor: pointer;
+}
+
+#saveToDo {
+  width: 92%;
+  list-style-type: none;
+  font-size: 1.8em;
+  padding: 0;
+  cursor: pointer;
 }
