@@ -26,6 +26,8 @@ myForm.addEventListener('submit', (e) => {
   document.getElementById('barra').addEventListener('click', (e) => {
     e.target.classList.toggle('barrato');
   });
+
+  myForm.reset();
 });
 
 // ELLIMINO LE LISTE CHE VOGLIO
