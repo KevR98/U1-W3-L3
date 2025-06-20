@@ -21,21 +21,23 @@ myForm.addEventListener('submit', (e) => {
 
   // Creo un tag button
   const rimuovi = document.createElement('button');
+  // Creo un tag i per l'icona
   const spanBottone = document.createElement('i');
+  const icon = document.createElement('i');
+  icon.classList.add('fa-solid', 'fa-trash');
+  icon.style.color = '#ff2600';
+  rimuovi.appendChild(icon);
   rimuovi.classList.add('bottoneRemove'); // Aggiungo una lista
-  spanBottone.innerHTML = `
-  <i class="fa-solid fa-trash" style="color: #ff2600;"></i>
-  `; // Metto un test all'interno del bottone
 
   // Creo un evento listener che rimuove la lista al click del bottone
   rimuovi.addEventListener('click', (e) => {
-    task.remove();
+    task.remove(); // Rimuove il testo a cui clicco il bottone
   });
 
   // Appendo gli elementi
   task.appendChild(testoTodo); // Task è il padre di testoTodo
   task.appendChild(rimuovi); // Task è il padre di rimuovi
-  rimuovi.appendChild(spanBottone);
+  rimuovi.appendChild(spanBottone); // rimuovi è il padre di span spanBottone
 
   // Creo una variabile
   const container = document.getElementById('saveToDo');
