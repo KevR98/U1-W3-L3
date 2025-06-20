@@ -21,8 +21,11 @@ myForm.addEventListener('submit', (e) => {
 
   // Creo un tag button
   const rimuovi = document.createElement('button');
+  const spanBottone = document.createElement('i');
   rimuovi.classList.add('bottoneRemove'); // Aggiungo una lista
-  rimuovi.innerHTML = `❌`; // Metto un test all'interno del bottone
+  spanBottone.innerHTML = `
+  <i class="fa-solid fa-trash" style="color: #ff2600;"></i>
+  `; // Metto un test all'interno del bottone
 
   // Creo un evento listener che rimuove la lista al click del bottone
   rimuovi.addEventListener('click', (e) => {
@@ -32,6 +35,7 @@ myForm.addEventListener('submit', (e) => {
   // Appendo gli elementi
   task.appendChild(testoTodo); // Task è il padre di testoTodo
   task.appendChild(rimuovi); // Task è il padre di rimuovi
+  rimuovi.appendChild(spanBottone);
 
   // Creo una variabile
   const container = document.getElementById('saveToDo');
